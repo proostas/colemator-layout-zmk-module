@@ -1,0 +1,4 @@
+name: colemator-layout-zmk-module
+build:
+  settings:
+    dts_root: .
