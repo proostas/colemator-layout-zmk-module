@@ -3,13 +3,6 @@
 / {
     behaviors {
         // Russian layer
-        ru_caps_word: russian_caps_word {
-            // behavior-caps-word is useless for Russian as it doesn't shift chars outside of a-z
-            // loking forward to PR#2043's &capslock_word
-            compatible = "zmk,behavior-caps-word";
-            #binding-cells = <0>;
-            continue-list = <UNDERSCORE RS(MINUS) BACKSPACE DELETE GRAVE LBKT RBKT APOS DOT COMMA SEMI>;
-        };
         //  Ц >> Q
         dikw: diktor_w {
             compatible = "zmk,behavior-mod-morph";
